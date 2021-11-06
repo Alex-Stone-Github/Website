@@ -1,26 +1,53 @@
+:root {
+    --fg: yellow;
+    --bg: rgb(161, 122, 161);
+}
+
 * {
     margin: 0px;
     padding: 0px;
-
+    color: var(--fg);
+    background-color: var(--bg);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    display: grid;
-    grid-template-areas: 
-        "nav main";
-    grid-template-columns: 5% 95%;
+/*
+GLOBAL \\\\\\\\\\\\\\\\\\
+*/
+h1 {
+    font-size: 50px;
 }
 
-.nav-bar {
-    grid-area: nav;
+p {
+    font-size: 36px;
+}
+
+.buffer {
+    margin-bottom: 150px;
+}
+
+/* 
+CUSTOM \\\\\\\\\\\\\\\\\\\\
+*/
+header {
+    display: flex;
+    width: 100vw;
     height: 100vh;
-    width: 5vw;
-    position: fixed;
-    background-color: red;
-
+    justify-content: center;
+    align-items: center;
 }
 
 main {
-    grid-area: main;
-    background-color: blue;
+    width: 60%;
+    margin: auto;
+}
+
+main > .about-me > .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main > .skills > .title {
+    text-align: center;
+    margin-bottom: 20px;
 }
