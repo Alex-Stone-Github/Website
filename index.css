@@ -1,6 +1,6 @@
 :root {
-    --fg: yellow;
-    --bg: rgb(161, 122, 161);
+    --fg: black;
+    --bg: white;
 }
 
 * {
@@ -19,6 +19,11 @@ h1 {
 }
 
 p {
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
     font-size: 36px;
 }
 
@@ -50,4 +55,17 @@ main > .about-me > .title {
 main > .skills > .title {
     text-align: center;
     margin-bottom: 20px;
+}
+
+main > .projects > .title {
+    text-align: center;
+}
+
+main > .more {
+    text-align: center;
+}
+main > .more > a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
 }
