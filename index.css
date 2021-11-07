@@ -1,6 +1,9 @@
 :root {
-    --fg: black;
+    --ffg: #0D0D0D;
+    --fg: #242B2E;
     --bg: white;
+    --bfont: 'Courier New', Courier, monospace;
+    --sfont: arial;
 }
 
 * {
@@ -8,7 +11,12 @@
     padding: 0px;
     color: var(--fg);
     background-color: var(--bg);
-    font-family: Arial, Helvetica, sans-serif;
+    transition: .5s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+*:hover {
+    color: var(--ffg);
 }
 
 /*
@@ -16,15 +24,18 @@ GLOBAL \\\\\\\\\\\\\\\\\\
 */
 h1 {
     font-size: 50px;
+    font-family: var(--bfont);
 }
 
 p {
     font-size: 36px;
+    font-family: var(--sfont);
 }
 
 a {
     text-decoration: none;
     font-size: 36px;
+    font-family: var(--sfont);
 }
 
 .buffer {
